@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Learning Bipedal Locomotion on Gear-Driven Humanoid Robot Using Foot-Mounted IMUs</title>
+  <link rel="icon" type="image/x-icon" href="static/images/eval_icon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning Bipedal Locomotion on Gear-Driven Humanoid Robot Using Foot-Mounted IMUs</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Sotaro Katayama</a><sup>1</sup>,</span> -->
+                Sotaro Katayama<sup>1</sup>,</span>
+                <span class="author-block">
+                  Yuta Koda<sup>2</sup>,</span>
+                <span class="author-block">
+                  Norio Nagatsuka<sup>2</sup>,</span>
+                  <span class="author-block">
+                    Masaya Kinoshita<sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Sony Group Corporation</span><br>
+                    <span class="author-block"><sup>2</sup>Sony Interactive Entertainment Inc.</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2504.00614.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.00614" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/cover.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        Subtitle 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Sim-to-real reinforcement learning (RL) for humanoid robots with high-gear ratio actuators remains challenging due to complex actuator dynamics and the absence of torque sensors.
+            To address this, we propose a novel RL framework leveraging foot-mounted inertial measurement units (IMUs).
+            Instead of pursuing detailed actuator modeling and system identification, we utilize foot-mounted IMU measurements to enhance rapid stabilization capabilities over challenging terrains.
+            Additionally, we propose symmetric data augmentation dedicated to the proposed observation space and random network distillation to enhance bipedal locomotion learning over rough terrain.
+            We validate our approach through hardware experiments on a miniature-sized humanoid EVAL-03 over a variety of environments.
+            The experimental results demonstrate that our method improves rapid stabilization capabilities over non-rigid surfaces and sudden environmental transitions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3">Method</h2>
+        <td>
+        <img src="static/images/overview.png" alt="Overview of the Proposed Method" style="width: 50%; height: auto; display: block; margin: 0 auto; margin-bottom: 30px;" />
+        </td>
+        <td>
+        <p>
+          Our miniature-sized humanoid EVAL-03 is equipped with an IMU on each of the left and right feet, respectively, as well as a body-mounted IMU.
+          To leverage these sensors, our observations include linear accelerations and angular velocities from the IMUs mounted on the left and right feet, as well as those from the body-mounted IMU.
+          The action space consists of target joint positions for the low-level PD controller, while we employ a low-pass filter on the target positions to prevent damage to the actuators.
+        </p>
+        </td>
+        <td>
+        <img src="static/images/rl_overview.png" alt="Overview of the Proposed Method" style="width: 65%; height: auto; display: block; margin: 0 auto; margin-top: 50px; margin-bottom: 30px;" />
+        </td>
+        <td>
+          We train our policy using Legged Gym (Rudin et al., 2020), a model-free RL framework that leverages massively parallelized physical simulation.
+          As provided by Legged Gym, the policy is trained across various terrains, including slopes, rough surfaces, upward stairs, downward stairs, and discrete steps.
+          We adopt the teacher-student training framework for blind locomotion over rough terrains (Lee et al., 2020) and further fine-tune the student policy via RL.
+        </p>
+        </td>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+
+<!-- Experimental results -->
+<section class="section hero is-light">
+  <div class="container is-full-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3"> Comparisons with and without Using Foot-Mounted IMUs</h2>
+        <div class="table-container">
+          <table class="table" align="center" style="table-layout: fixed;word-break: break-word; width: 100%;">
+            <thead>
+              <tr>
+                <th scope="col" style="min-width: 200px; vertical-align: middle;">w/ Foot-Mounted IMUs</th>
+                <th scope="col" style="min-width: 200px; vertical-align: middle;">w/o Foot-Mounted IMUs 1</th>
+                <th scope="col" style="min-width: 200px; vertical-align: middle;">w/o Foot-Mounted IMUs 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <td style="text-align: center; vertical-align: middle;">Step down (large)</td> -->
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/cushion_pet/with_feetimus.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/cushion_pet/without_feetimus1.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/cushion_pet/without_feetimus2.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+              <tr>
+                <!-- <td style="text-align: center; vertical-align: middle;">Step down (large)</td> -->
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/uneven/with_feetimus.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/uneven/without_feetimus1.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/uneven/without_feetimus2.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+              <tr>
+                <!-- <td style="text-align: center; vertical-align: middle;">Step down (large)</td> -->
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_small/with_feetimus.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_small/without_feetimus1.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_small/without_feetimus2.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+              <tr>
+                <!-- <td style="text-align: center; vertical-align: middle;">Step down (large)</td> -->
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_medium/with_feetimus.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_medium/without_feetimus1.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_medium/without_feetimus2.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+              <tr>
+                <!-- <td style="text-align: center; vertical-align: middle;">Step down (large)</td> -->
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_large/with_feetimus.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_large/without_feetimus1.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/step_down_large/without_feetimus2.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            To evaluate the effectiveness of the proposed method, we have compared the following three policies in the hardware experiments:
+            <ul>
+              <li>Policy observing linear accelerations and angular velocities of base-mounted IMU and foot-mounted IMUs (<strong>w/ Feet IMUs</strong>) </li>
+              <li>Policy observing linear accelerations and angular velocities of base-mounted IMU (<strong>w/o Feet IMUs 1</strong>) </li>
+              <li>Policy observing angular velocities of base-mounted IMU (<strong>w/o Feet IMUs 2</strong>) </li>
+            </ul>
+            The first method represents our proposed approach, while the latter two represent existing methods.
+            Through hardware experiments, we investigate how the additional feet IMU observations can mitigate sim-to-real gaps and enhance stability on real hardware.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3">Velocity Tracking</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/walkaround.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3">External Push</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/external_push.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3">Walking with Payload</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/payload.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-max-desktop is-full-mobile">
+        <h2 class="title is-3">Walking over a Variety of Terrains</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/terrains.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End experimental results -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{katayama2025learning,
+          title={Learning Bipedal Locomotion on Gear-Driven Humanoid Robot Using Foot-Mounted IMUs},
+          author={Sotaro Katayama and Yuta Koda and Norio Nagatsuka and and Masaya Kinoshita},
+          joiurnal={arXv preprint arxiv:2504.00614},
+          year={2025},
+        }
+        </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
