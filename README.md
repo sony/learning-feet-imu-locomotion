@@ -1,4 +1,4 @@
-# Learning Bipedal Locomotion on Gear-Driven Humanoid Robot Using Foot-Mounted IMUs
+# [Learning Bipedal Locomotion on Gear-Driven Humanoid Robot Using Foot-Mounted IMUs](https://sony.github.io/learning-feet-imu-locomotion/)
 This site use an academic paper project page template.
 https://github.com/eliahuhorwitz/Academic-project-page-template
 
